@@ -14,13 +14,11 @@ function Hero() {
 
   return (
     <div id="home" className="bg-[#3D5AFE] min-h-screen md:max-h-screen overflow-hidden">
-      {/* Hero Header */}
       <div className="flex justify-between items-center py-6 px-5 md:px-10">
         <a href="#home" className="text-white font-normal text-4xl logo">
           urho.
         </a>
 
-        {/* Desktop nav */}
         <nav className="hidden lg:flex gap-8 links">
           {links.map((link) => (
             <a
@@ -33,12 +31,10 @@ function Hero() {
           ))}
         </nav>
 
-        {/* Desktop button */}
         <button className="hidden lg:block text-white text-base font-semibold links border-2 rounded-lg py-3 px-5 hover:bg-white cursor-pointer hover:text-[#3D5AFE] transition-all duration-300 hover:border-white">
           Get a quote
         </button>
 
-        {/* Hamburger icon (turns into an X) */}
         <button
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
@@ -62,7 +58,6 @@ function Hero() {
         </button>
       </div>
 
-      {/* Mobile menu */}
       <div
         className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
           open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"

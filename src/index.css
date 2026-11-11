@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
 
 @import "tailwindcss";
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,8 +20,6 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 
-/* hero animations */
-/* main image: gentle float, only moves upward so it stays at the bottom */
 .float-up {
   animation: float-up 6s linear infinite;
 }
@@ -29,7 +28,6 @@ html {
   animation: float-zigzag 10s linear infinite;
 }
 
-/* main image: small circle around your offset position */
 @keyframes float-up {
   from {
     transform: translate(-15%, 20%) rotate(0deg) translateX(8px) rotate(0deg);
@@ -40,7 +38,6 @@ html {
   }
 }
 
-/* background: bigger circle, slower, opposite direction */
 @keyframes float-zigzag {
   from {
     transform: rotate(0deg) translateX(14px) rotate(0deg);

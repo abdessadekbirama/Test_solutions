@@ -5,7 +5,6 @@ import heroImg from "../assets/hero.svg";
 function HeroBody() {
   return (
     <div className="hero-body relative flex flex-col md:flex-row items-center gap-12 md:gap-6 mt-6 md:mt-4 px-5 md:px-10 lg:px-20 overflow-x-clip">
-      {/* text */}
       <div className="flex flex-col items-center md:items-start md:self-center text-center md:text-left gap-3 md:gap-5 w-full md:w-1/2">
         <img
           src={heroShapes}
@@ -28,16 +27,12 @@ function HeroBody() {
         </button>
       </div>
 
-      {/* right images */}
-      {/* on desktop this is taken out of the flow, so the text can't affect it */}
       <div className="relative z-20 w-full md:w-1/2 flex justify-end items-end md:absolute bottom-10 md:bottom-0 md:right-0 pointer-events-none">
-        {/* background shape sits behind the main image */}
         <img
           src={heroBg}
           alt="Hero background"
           className="float-zigzag absolute z-0 bottom-0 right-0 w-[150%] md:w-[150%] max-w-none"
         />
-        {/* main image sits at the bottom and can overflow the top freely */}
         <img
           src={heroImg}
           alt="Hero image"

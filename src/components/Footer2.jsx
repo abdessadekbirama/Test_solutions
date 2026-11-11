@@ -30,7 +30,6 @@ const LinkItem = ({ href, value }) => (
     className="group flex items-center gap-1 py-1 text-sm text-[#9E9E9E] links
                transition-all duration-200 hover:text-white hover:translate-x-1"
   >
-    {/* Both icons share the same box; we just swap which one is visible */}
     <span className="relative w-5 h-5 shrink-0">
       <img
         src={arrowIcon}
@@ -58,13 +57,8 @@ const Column = ({ title, children }) => (
 function Footer2() {
   return (
     <footer className="bg-[#212121] pt-12 pb-10 md:pt-20">
-      {/*
-        1 column  : phones
-        2 columns : tablets / small laptops
-        4 columns : wide screens (xl and up) -> all boxes in one row
-      */}
+      
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 sm:px-8 md:grid-cols-2 md:gap-x-12 xl:grid-cols-4 xl:gap-x-8">
-        {/* About */}
         <Column title="About Our Agency">
           <p className="text-[#9E9E9E] links text-sm">
             Together with our clients, we still want to look for new places for
@@ -77,7 +71,6 @@ function Footer2() {
           </button>
         </Column>
 
-        {/* Contact */}
         <Column title="Contact Info">
           <div className="flex gap-2 items-start">
             <img src={HomeIcon} alt="" className="w-6 shrink-0" />
@@ -100,7 +93,6 @@ function Footer2() {
           </div>
         </Column>
 
-        {/* Navigation */}
         <Column title="Navigation">
           <nav className="flex flex-col">
             {navigation.map((link) => (
@@ -109,7 +101,6 @@ function Footer2() {
           </nav>
         </Column>
 
-        {/* Useful links */}
         <Column title="Useful Links">
           <nav className="flex flex-col">
             {links.map((link) => (
@@ -119,7 +110,6 @@ function Footer2() {
         </Column>
       </div>
 
-      {/* Divider */}
       <div className="mx-auto mt-14 max-w-7xl px-6 sm:px-8 md:mt-20">
         <div className="h-px w-full bg-[#9E9E9E]/60"></div>
       </div>

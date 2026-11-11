@@ -14,7 +14,6 @@ function FeaturesSection() {
 
   return (
     <div className="mt-16 md:mt-24 mx-auto max-w-6xl flex flex-col lg:flex-row items-center lg:items-end justify-center gap-6 lg:gap-8 px-5 md:px-10">
-      {/* left column */}
       <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-4 md:gap-6 w-full lg:w-2/5 lg:self-center">
         <h3 className="text-[#3D5AFE] links font-semibold text-base md:text-lg">
           THE FEATURES
@@ -40,7 +39,6 @@ function FeaturesSection() {
         </button>
       </div>
 
-      {/* right column */}
       <img
         src={img2}
         alt=""

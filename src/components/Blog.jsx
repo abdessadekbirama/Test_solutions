@@ -30,7 +30,6 @@ const items = [
 function Blog() {
   return (
     <section id="blog" className="px-5 sm:px-10 lg:px-20 py-16 md:py-24 flex flex-col gap-2 items-center mt-10">
-      {/* Heading */}
       <div className="text-center md:text-left">
         <p className="text-[#3D5AFE] font-semibold links text-sm md:text-lg tracking-wide text-center">
           FROM THE BLOG
@@ -40,14 +39,13 @@ function Blog() {
         </h2>
       </div>
 
-      {/* Grid: 1 col mobile, 2 cols tablet, 4 cols desktop */}
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mt-8 md:mt-12">
         {items.map((item, index) => (
           <article
             key={index}
             className="cursor-pointer group flex flex-col h-full bg-white overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
           >
-            {/* Cover: same image on every card, on a brand gradient */}
             <div className="relative aspect-[16/10] w-full overflow-hidden">
               <img
                 src={coverImage}
@@ -57,7 +55,6 @@ function Blog() {
               />
             </div>
 
-            {/* Text */}
             <div className="flex flex-col gap-3 py-5 sm:py-4 px-2 flex-1">
               <span className="text-[#9E9E9E] links text-xs sm:text-sm">
                 {item.date}

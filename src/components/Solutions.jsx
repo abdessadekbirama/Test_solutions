@@ -1,7 +1,6 @@
 function Solutions() {
   return (
     <div className="mt-16 lg:mt-30 relative">
-      {/* Background blocks: 50% of the box height, centered vertically */}
       <div
         className="absolute inset-x-0 top-1/5 bottom-1/5 flex"
         aria-hidden="true"
@@ -10,7 +9,6 @@ function Solutions() {
         <div className="bg-[#D9D9D9] w-2/3"></div>
       </div>
 
-      {/* Content layer: the box's height drives the section height */}
       <div className="relative px-5 sm:px-10 lg:px-0">
         <div className="bg-[#F5F5F5] w-full lg:w-1/2 lg:ml-[15%] p-6 sm:p-10 lg:p-20 flex flex-col gap-4 md:gap-6">
           <h2 className="text-[#3D5AFE] links font-semibold text-base md:text-lg">

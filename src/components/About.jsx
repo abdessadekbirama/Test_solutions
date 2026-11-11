@@ -34,14 +34,12 @@ function About() {
 
   return (
     <div id="about" className="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-16 py-10 md:py-20 px-5 md:px-10 lg:px-20">
-      {/* left image */}
       <img
         src={aboutImg}
         alt="About"
         className="w-3/4 max-w-xs sm:max-w-sm lg:w-[40%] lg:max-w-md"
       />
 
-      {/* right block */}
       <div className="flex flex-col gap-4 md:gap-6 lg:flex-1 text-center lg:text-left">
         <h3 className="text-[#3D5AFE] font-semibold text-base md:text-lg links">
           FIND OUT MORE

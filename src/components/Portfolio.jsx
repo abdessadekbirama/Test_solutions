@@ -10,8 +10,6 @@ function Portfolio() {
     {},
   ];
 
-  // checkerboard: a box is light when (row + column) is even
-  // small screens have 2 columns, from md up there are 4
   const isLight = (index, columns) =>
     (Math.floor(index / columns) + (index % columns)) % 2 === 0;
 
